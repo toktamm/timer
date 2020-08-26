@@ -13,18 +13,14 @@ const alarm = function (time) {
 
 for (let element of newArr) {
   // console.log(element)
-  let varNumber = Number(element);
-  if (varNumber > 0) {
+  // To convert element to number, defined the variable convToNumber
+  let convToNumber = Number(element);
+  if (convToNumber > 0) {
     // console.log("inside if statement")
     alarm(element * 1000);
   }
 };
 
 
-/*
-if (time === null) {
-  break;
-} else if () {
-  skip
- }
-*/
+// The last block code is writte in a way that it only takes numbers
+// so we don't need to include if (time === null)
